@@ -9,3 +9,12 @@ ggplot(tab) +
     ) +
     ggtitle("A boxplot with jitter") +
     xlab("")
+
+ggplot(tab, aes(x=as.factor(Nuts)) + 
+    geom_boxplot(fill="slateblue", alpha=0.2) + 
+    xlab("type")
+       
+       ggplot(tab1, aes(x=Site, y=Altitude, size=Orchard), fill="orange") +
+geom_point(alpha=0.5, shape=21, color="orange")+
+               scale_size(range = c(0, 25))+
+               theme(axis.text.x = element_text(color="white"))
